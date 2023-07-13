@@ -4,5 +4,4 @@
 
 LIVE PREVIEW 
 
-
-https://dev-j0.github.io/portfolio-update/
+https://dev-j0.github.io/portfolio/
