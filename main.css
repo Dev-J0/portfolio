@@ -234,7 +234,6 @@ max-height:100%;
   margin-top: 100px;
 }
 
-
 .gallery-wrap {
   display: flex;
   flex-direction: row;
@@ -251,10 +250,14 @@ max-height:100%;
   background-size: cover;
   background-repeat: none;
   transition: flex 0.8s ease;
+  /* Apply grayscale filter to make items black and white */
+  filter: grayscale(100%);
 }
+
 
 .item:hover {
   flex: 7;
+  filter: grayscale(0%);
 }
 
 .item-1 {
@@ -625,7 +628,7 @@ margin-top: 30px;
   background: rgba(70, 156, 152, 0);
   box-shadow: 0 0 0 0 rgb(3, 3, 3);
   animation: pulse-white 3s infinite;
-  color: rgb(216, 209, 210);
+  color: rgb(212, 210, 210);
   text-align: center;
   padding: 10px;
   margin: 20px;
@@ -650,17 +653,17 @@ margin-top: 30px;
 @keyframes pulse-white {
   0% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(77, 75, 75, 0.7);
+    
   }
   
   70% {
     transform: scale(1);
-    box-shadow: 0 0 0 3px rgba(112, 105, 105, 0.39);
+  
   }
   
   100% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.267);
+  
   }
 }
 
