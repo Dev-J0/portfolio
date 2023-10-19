@@ -280,6 +280,23 @@ max-height:100%;
   background-image: url("./Capture\ d’écran\ \(55\).png");
 }
 
+.item::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%; 
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.589); 
+  color: white; 
+  padding: 10px; 
+  border-radius: 5px;
+  opacity: 0; 
+  transition: opacity 0.3s;
+  font-size: 15px;
+}
+
+.item:hover::after {
+  opacity: 1; /* Show the text on hover */
+}
 #logo {
   transform: translatey(0px);
   box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);;
