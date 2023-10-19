@@ -261,15 +261,15 @@ max-height:100%;
 }
 
 .item-1 {
-  background-image: url("./Capture\ d’écran\ \(96\).png");
-}
-
-.item-2 {
   background-image: url("./Capture\ d’écran\ \(95\).png");
 }
 
+.item-2 {
+  background-image: url("./Capture\ d’écran\ \(96\).png");
+}
+
 .item-3 {
-  background-image: url("./Capture\ d’écran\ \(55\).png");
+  background-image: url("./Capture\ d’écran\ \(117\).png");
 }
 
 .item-4 {
@@ -277,7 +277,7 @@ max-height:100%;
 }
 
 .item-5 {
-  background-image: url("./Capture\ d’écran\ \(43\).png");
+  background-image: url("./Capture\ d’écran\ \(55\).png");
 }
 
 #logo {
