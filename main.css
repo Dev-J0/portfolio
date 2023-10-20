@@ -237,6 +237,7 @@ max-height:100%;
   width: 100%;
   height: 70vh;
   opacity: 0.8;
+  flex-wrap: wrap;
 }
 
 .item {
@@ -247,9 +248,8 @@ max-height:100%;
   background-size: cover;
   background-repeat: none;
   transition: flex 0.8s ease;
-  /* Apply grayscale filter to make items black and white */
   filter: grayscale(100%);
-  border-radius: 50% 20% / 10% 40%;
+
   box-shadow: rgba(168, 168, 175, 0.726) 0px 0px 16px;
 }
 
@@ -775,4 +775,4 @@ margin-top: 30px;
     text-align: center;
 }
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur79.cur), auto !important;} /* End https://www.cursors-4u.com */
-/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto} /* End https://www.cursors-4u.com */
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto} /* End https://www.cursors-4u.com */}
