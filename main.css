@@ -563,52 +563,59 @@ a:-webkit-any-link {
 .containerSection2 {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column; /* Updated to column for small screens */
 
-  margin: 20px 40px 20px 40px;
- 
+  margin: 20px 40px;
 }
 
 .containerS2left {
-  width: 50%;
+  width: 100%; /* Updated to full width for small screens */
+  position: relative; /* Added relative positioning */
 }
 
 .containerS2left img {
-  width: 30rem;
-  height: 50rem;
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
+  width: 100%;
+  height: auto;
+  max-width: 30rem; /* Added max-width to prevent image overflow */
+  max-height: 50rem;
   filter: drop-shadow(0 0 0.75rem rgba(212, 205, 205, 0.288));
 }
 
 .containerS2right {
-width: 55%;
-font-size: 19px;
-height: 250px;
-padding: 40px;
-display: flex;
-justify-content: center;
-text-align: center ;
-font-family: 'Josefin Sans', sans-serif;
-border-radius: 90px;
-margin-right: 110px;
-margin-bottom: 220px;
-
-font-weight: 500;
-letter-spacing: 5px;
-transition: 0.5s;
-
+  width: 100%; 
+  font-size: 20px;
+  height: auto; 
+  padding-top: 100px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 90px;
+  margin-top: 20px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  transition: 0.5s;
+  padding-right: 100px;
 }
 
 .containerS2right:hover {
-    color: rgb(197, 197, 197);
-    text-shadow: 0 0 5px #ddb2a0,
-                0 0 25px #3a3b3b,
-                0 0 50px #5b5c5c,
-                0 0 100px #be9b9b;
+  color: rgb(197, 197, 197);
+  text-shadow: 0 0 5px #ddb2a0, 0 0 25px #3a3b3b, 0 0 50px #5b5c5c, 0 0 100px #be9b9b;
+}
+
+@media (min-width: 768px) {
+  .containerSection2 {
+    flex-direction: row;
   }
-  
+
+  .containerS2left,
+  .containerS2right {
+    width: 50%;
+  }
+
+  .containerS2right {
+    margin-top: 0;
+  }
+}
+
 
 .skillsContainer,
 .softskills {
@@ -755,14 +762,16 @@ margin-top: 30px;
 
   .containerS2right {
     font-size: 18px;
-    margin-right: 0;
-    padding: 10px; /* Add some padding to separate the text and image */
+    margin-right: 80px;
+    padding: 80px; 
+   
   }
 
+
   .containerS2left img {
-    width: 100%; /* Adjust image width to fill the container */
-    max-width: 400px; /* Limit maximum image width */
-    margin-bottom: 20px; /* Add some spacing between the image and text */
+    width: 100%; 
+    max-width: 400px;
+    margin-bottom: 20px; 
   }
 
   .skillsContainer, .softskills {
