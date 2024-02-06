@@ -18,8 +18,9 @@
 
 
 html {
-  scrollbar-width: none;
+
   font-family: 'Quicksand', sans-serif;
+  user-select: none;
 
 }
 
@@ -71,16 +72,16 @@ body::-webkit-scrollbar {
 
 .layout .section-stick .stick {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(102, 91, 91, 0.473);
   transition: all var(--time-animation) ease-in-out;
 }
 
 .layout .section-stick .active {
   position: absolute;
-  background-color: var(--color-white);
+  background-color: aaargba(238, 197, 197, 0.719);
   box-shadow: 0px 0px 12px 1px var(--color-white);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+
+
 }
 
 .layout section {
@@ -182,6 +183,11 @@ link:visited {
 .layout .s6 {
   background: linear-gradient(#183A37,#A2666F);
   max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+
 }
 
 .passionsTitle {
@@ -219,13 +225,6 @@ max-height:100%;
     transition: all 0.5s ease 0s;
 }
 
-.aboutRight{
- 
-}
-
-.aboutLeft {
- 
-}
 
 #aboutMiddleTitle2 {
   margin-top: 100px;
@@ -295,7 +294,7 @@ max-height:100%;
 }
 
 .item:hover::after {
-  opacity: 1; /* Show the text on hover */
+  opacity: 1;
 }
 #logo {
   transform: translatey(0px);
@@ -350,17 +349,27 @@ max-height:100%;
 
 .designed {
   color: white;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  display: flex;
   z-index: 3;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 350px;
+}
+
+.designed p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 15px ;
   font-weight: 500;
 letter-spacing: 5px;
   padding-left: 10px;
   
-  
+}
+
+
+#scroll:hover {
+  color:rgb(39, 59, 51);
+  cursor: pointer;
 }
 
 .containerProjects {
@@ -410,7 +419,6 @@ letter-spacing: 5px;
   border: 2px solid rgba(255,255,255,0.06);
   border-radius: 10px;
   box-shadow: 0 20px 30px rgba(0,0,0,0.2);
-  backdrop-filter: blur(10px);
   height: 550px;
   position: absolute;
   top: 30%;
@@ -536,9 +544,8 @@ a:-webkit-any-link {
   position:relative;
   height: 20%;
   width: 40%;
-  padding-bottom: 170px;
+  padding-top: 100px;
   filter: drop-shadow(0 0 0.75rem rgba(10, 5, 5, 0.568));
-
 }
 
 .contactLeft h2 {
@@ -563,20 +570,20 @@ a:-webkit-any-link {
 .containerSection2 {
   width: 100%;
   display: flex;
-  flex-direction: column; /* Updated to column for small screens */
+  flex-direction: column; 
 
   margin: 20px 40px;
 }
 
 .containerS2left {
-  width: 100%; /* Updated to full width for small screens */
-  position: relative; /* Added relative positioning */
+  width: 100%; 
+  position: relative; 
 }
 
 .containerS2left img {
   width: 100%;
   height: auto;
-  max-width: 30rem; /* Added max-width to prevent image overflow */
+  max-width: 30rem; 
   max-height: 50rem;
   filter: drop-shadow(0 0 0.75rem rgba(212, 205, 205, 0.288));
 }
@@ -585,7 +592,7 @@ a:-webkit-any-link {
   width: 100%; 
   font-size: 20px;
   height: auto; 
-  padding-top: 100px;
+  padding-top: 170px;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   border-radius: 90px;
@@ -596,10 +603,11 @@ a:-webkit-any-link {
   padding-right: 100px;
 }
 
-.containerS2right:hover {
+.containerS2right p {
   color: rgb(197, 197, 197);
-  text-shadow: 0 0 5px #ddb2a0, 0 0 25px #3a3b3b, 0 0 50px #5b5c5c, 0 0 100px #be9b9b;
+  text-shadow: 0 0 5px #0c0c0b, 0 0 25px #3a3b3b, 0 0 50px #5b5c5c, 0 0 100px #be9b9b;
 }
+
 
 @media (min-width: 768px) {
   .containerSection2 {
@@ -747,12 +755,6 @@ margin-top: 30px;
 	70%,100%{ width: 30vw; }
 }
 
-.containerFooter{
-  position: absolute;
-  bottom: 1%;
-  right: 50%;
-  color: white;
-}
 
 
 @media only screen and (max-width: 768px) {
