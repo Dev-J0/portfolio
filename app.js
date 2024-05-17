@@ -1,4 +1,5 @@
 
+
 /* scrolling bar + animation of the page*/
 
 const TIME_OUT = 600; // It should be the same transition time of the sections
