@@ -139,7 +139,7 @@ link:visited {
 }
 
 .layout .s1 {
-  background: linear-gradient(#04151F, #183A37);
+  background: linear-gradient(#071E22, #183A37);
   transform: translateY(0);
   z-index: 4;
   border-bottom: none;
@@ -148,15 +148,15 @@ link:visited {
 }
 
 .layout .s2 {
-  background:linear-gradient(#183A37, #A2666F);
+  background:linear-gradient(#183A37, #799496);
   z-index: 3;
   max-height: 100vh;
   max-width: 100%;
-  border-bottom: 2px solid #A2666F;
+  border-bottom: 2px solid #799496;
 }
 
 .layout .s3 {
-  background: linear-gradient(#A2666F,#183A37) ;
+  background: linear-gradient(#799496,#183A37) ;
   z-index: 2;
   width: 100%;
   display: flex;
@@ -175,15 +175,15 @@ link:visited {
 }
 
 .layout .s4 {
-  background: linear-gradient(#183A37,#A2666F);
+  background: linear-gradient(#183A37,#799496);
   z-index: 2;
   max-height: 100vh;
  
-  border-bottom: 2px solid #A2666F;
+  border-bottom: 2px solid #799496;
 }
 
 .layout .s5 {
-  background: linear-gradient(#A2666F,#183A37);
+  background: linear-gradient(#799496,#183A37);
   z-index: 2;
   max-height: 100vh;
   display: flex;
@@ -196,7 +196,7 @@ link:visited {
 
 
 .layout .s6 {
-  background: linear-gradient(#183A37,#A2666F);
+  background: linear-gradient(#183A37,#799496);
   max-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -391,7 +391,7 @@ width: 50%;
 .signature {
   color: white;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   letter-spacing: 5px;
   text-align: center;
@@ -618,12 +618,12 @@ a:-webkit-any-link {
 }
 
 .containerS2left {
-  width: 900px;
+  width: 700px;
   position: relative; 
 }
 
 .containerS2left img {
-  width: 100%;
+  width: 70%;
   height: auto;
   max-width: 30rem; 
   max-height: 50rem;
@@ -631,21 +631,21 @@ a:-webkit-any-link {
 }
 
 .containerS2right {
-  width: 70%; 
+  width: 60%; 
   font-size: 20px;
   height: auto; 
   padding-top: 170px;
   text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Quicksand", sans-serif;
   border-radius: 90px;
   margin-top: 20px;
   transition: 0.5s;
-  padding-right: 80px;
+  padding-right:100px;
 }
 
 .containerS2right p {
-  color: rgb(197, 197, 197);
-  text-shadow: 0 0 5px #0c0c0b, 0 0 25px #3a3b3b, 0 0 50px #5b5c5c, 0 0 100px #be9b9b;
+  color: #E6E8E6;
+  text-shadow: 0 0 5px #0c0c0b, 0 0 25px #98a7a7, 0 0 50px #5b5c5c, 0 0 100px #be9b9b;
 }
 
 
@@ -799,13 +799,13 @@ margin-top: 30px;
   }
 
   .containerS2right {
-
-    max-width: 600px;
+    max-width: 300px;
     align-self: center;
     font-size: 22px;
     position: absolute;
     top: 0;
     left: 50px;
+    font-stretch: expanded;
   }
 
   .main {
