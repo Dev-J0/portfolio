@@ -751,6 +751,23 @@ margin-top: 30px;
 	animation: span 3s ease-in infinite alternate;
 }
 
+.copyright-container {
+font-size: 15px;
+  color: #03000060; 
+  text-align: center; 
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.copyright-container a {
+  color: rgba(197, 195, 195, 0.562);
+  text-decoration: none; 
+}
+
+.copyright-container a:hover {
+  text-decoration: underline; 
+}
+
 .letter{
 	display: inline-flex;
 	height: 30px;
