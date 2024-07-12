@@ -768,6 +768,12 @@ font-size: 15px;
   text-decoration: underline; 
 }
 
+#contanctPic {
+  position: relative;
+  margin: 100px 0px 50px 400px;
+  width: 300px;
+  height: 400px;
+}
 .letter{
 	display: inline-flex;
 	height: 30px;
