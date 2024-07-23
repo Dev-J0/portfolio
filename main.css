@@ -288,29 +288,29 @@ link:visited {
 
 
 .item-1 {
-  background-image: url("./Capture\ d’écran\ \(96\).png") ;
+  background-image: url("./Pictures/Capture\ d’écran\ \(96\).png") ;
 }
 
 
 
 .item-2 {
-  background-image: url("./Capture\ d’écran\ \(172\).png");
+  background-image: url("./Pictures/Capture\ d’écran\ \(172\).png");
 }
 
 .item-3 {
-  background-image: url("./Capture\ d’écran\ \(207\).png");
+  background-image: url("./Pictures/Capture\ d’écran\ \(207\).png");
 }
 
 .item-4 {
-  background-image: url("./Capture\ d’écran\ \(117\).png");
+  background-image: url("./Pictures/Capture\ d’écran\ \(117\).png");
 }
 
 .item-5 {
-  background-image: url("./Capture\ d’écran\ \(191\).png");
+  background-image: url("./Pictures/Capture\ d’écran\ \(191\).png");
 }
 
 .item-6 {
-  background-image: url("./Capture\ d’écran\ \(55\).png");
+  background-image: url("./Pictures/Capture\ d’écran\ \(55\).png");
 }
 
 .item::after {
@@ -795,7 +795,7 @@ font-size: 15px;
 	display: inline-flex;
 	height: 30px;
 	width: 27px;
-	/* border: 2.5px solid #FF1EAD; */
+
 	border: 2.35px solid black;
 	border-radius: 14px;
 	box-shadow:
