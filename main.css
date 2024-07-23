@@ -186,11 +186,7 @@ link:visited {
   background: linear-gradient(#799496,#183A37);
   z-index: 2;
   max-height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
-  border-bottom: 2px solid #183A37;
-  align-content: space-around;
-  font-size: 20px;
+
 
 }
 
@@ -206,28 +202,43 @@ link:visited {
 }
 
 .passionsTitle {
-  color: black;
-  text-shadow: 5px 5px 10px #c3c7c3;
   font-size: 39px;
+   font-weight: 800;
+    padding: 20px 0px 50px 50px;
+    color: black;
+    text-shadow: 5px 5px 10px #c3c7c3;
+
+    font-family: 'Gruppo', cursive;;
+  
 }
 
 .passions {
-width: 50%;
+  font-size: 19px;
+  margin-top: 100px;
+  font-family: "Josefin Sans", sans-serif;
+  filter: drop-shadow(rgba(224, 171, 171, 0.57) 0px 0px 0.75rem);
+  font-weight: 500;
+  letter-spacing: 5px;
+  transition: all 0.5s ease 0s;
+}
+
+#interestPic {
+
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#interestPic img {
+  height: 300px;
+  z-index: 2;
 }
 
 .about {
     width: 60%;
     height: 200px;
-    font-size: 19px;
-    margin-top: 200px;
-    display: flex;
-
-    flex-wrap: wrap;
-   align-content: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-   
+    font-size: 17px;
+    margin-top: 150px;
     font-family: "Josefin Sans", sans-serif;
     border-radius: 90px;
     margin-left: 150px;
@@ -236,12 +247,14 @@ width: 50%;
     font-weight: 500;
     letter-spacing: 5px;
     transition: all 0.5s ease 0s;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-gap: 50px; 
+    align-content: center;
+    text-align: center;
 }
 
 
-#aboutMiddleTitle2 {
-  margin-top: 100px;
-}
 
 .gallery-wrap {
   display: flex;
@@ -632,17 +645,16 @@ a:-webkit-any-link {
 
 .containerS2right {
   width: 60%; 
-  font-size: 20px;
+  font-size: 23px;
   height: auto; 
   padding-top: 170px;
   text-align: center;
-  font-family: "Josefin Sans", sans-serif;
+  font-family:'Gruppo', cursive;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   border-radius: 90px;
   margin-top: 20px;
-  transition: 0.5s;
   padding-right:100px;
 }
 
@@ -760,6 +772,8 @@ font-size: 15px;
   text-align: center; 
   text-decoration: none;
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .copyright-container a {
@@ -776,7 +790,6 @@ font-size: 15px;
   margin: 100px 0px 50px 400px;
   width: 300px;
   height: 400px;
-  cur
 }
 .letter{
 	display: inline-flex;
@@ -865,8 +878,8 @@ font-size: 15px;
     display: none;
   }
 
-  .about {
-    font-size: 25px;
+  .s2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 }
 
@@ -907,22 +920,12 @@ font-size: 15px;
    
 
 
-   .passionsTitle {
-    font-size: 25px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px 0px 50px 50px;
+#aboutMiddleTitle2 {
+    margin-top: 100px;
+}
+
+
   
-  }
-  .about {
-    margin: 100px 10px ;
-    flex-wrap: wrap;
-    letter-spacing: normal;
-    font-size: 12px;
-    justify-content: center;
-    flex-direction: row;
-  }
   
   .skill15,
   .skill16 {
