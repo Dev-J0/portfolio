@@ -841,11 +841,11 @@ font-size: 15px;
   .containerS2right {
     max-width: 300px;
     align-self: center;
-    font-size: 22px;
+    font-size: 20px;
     position: absolute;
     top: 0;
     left: 50px;
-    font-stretch: expanded;
+    
   }
 
   .main {
@@ -881,6 +881,22 @@ font-size: 15px;
   .s2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
+
+  .passionsTitle {
+    font-size: 20px;
+
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 2, 1fr ;
+    grid-template-rows: 2, 1fr;
+
+  }
+
+  .copyright-container {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -895,6 +911,38 @@ font-size: 15px;
     text-align: left;
   }
 
+  .passionsTitle {
+    font-size: 20px;
+
+  }
+
+  .about {
+    font-size: 9px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: minmax(50px,auto);
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 1px;
+  
+    margin-top: 10px;
+    padding: 30px;
+    width: 50%;
+    margin-right: 150px;
+
+  }
+
+  .about-item {
+    padding: 20px;
+    text-overflow: ellipsis;
+  }
+
+
+#aboutMiddleTitle2 {
+  margin-top: 0px;
+}
+  .copyright-container {
+    display: none;
+  }
   #extra {
     display: none;
   }
@@ -919,10 +967,6 @@ font-size: 15px;
 
    
 
-
-#aboutMiddleTitle2 {
-    margin-top: 100px;
-}
 
 
   
